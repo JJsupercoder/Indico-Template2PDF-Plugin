@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template Display System</title>
+  </head>
+  <body>
+    <h1><b>Hello! Welcome to Template display System</b></h1>
+
+    <h2>Click a Button to Redirect:</h2>
+
+    <!-- Button 1 redirects to /template1 -->
+    <button id="template1">Template 1</button>
+    <script>
+      document
+        .getElementById("template1")
+        .addEventListener("click", function () {
+          window.location.href = "http://127.0.0.1:5000/template1";
+        });
+    </script>
+
+    <button id="generatePdf1">Generate PDF 1</button>
+    <script>
+      document
+        .getElementById("generatePdf1")
+        .addEventListener("click", function () {
+          window.location.href = "http://127.0.0.1:5000/template1/generate_pdf";
+        });
+    </script>
+    <br />
+    <br />
+
+    <!-- Button 2 redirects to /template2 -->
+    <button id="template2">Template 2</button>
+    <script>
+      document
+        .getElementById("template2")
+        .addEventListener("click", function () {
+          window.location.href = "http://127.0.0.1:5000/template2";
+        });
+    </script>
+
+    <button id="generatePdf2">Generate PDF 2</button>
+    <script>
+      document
+        .getElementById("generatePdf2")
+        .addEventListener("click", function () {
+          window.location.href = "http://127.0.0.1:5000/template2/generate_pdf";
+        });
+    </script>
+  </body>
+</html>
